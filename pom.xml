@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mbsaisa</groupId>
-	<artifactId>Domain</artifactId>
+	<artifactId>azure-domains-api-client-library</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Domain</name>
-	<description>Domain</description>
+	<description>Azure Domains API Client Library</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
