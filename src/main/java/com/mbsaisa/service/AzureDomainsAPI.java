@@ -82,19 +82,11 @@ public class AzureDomainsAPI {
 						domain.getDomainName(),
 						new DomainInner()
 								.withLocation(domain.getLocation())
-								.withTags(domain.getTags())
 								.withContactAdmin(domain.getProperties().contactAdmin())
 								.withContactBilling(domain.getProperties().contactBilling())
 								.withContactRegistrant(domain.getProperties().contactRegistrant())
 								.withContactTech(domain.getProperties().contactTech())
-								.withPrivacy(domain.getProperties().privacy())
-								.withAutoRenew(domain.getProperties().autoRenew())
-								.withConsent(domain.getProperties().consent())
-								.withDnsType(domain.getProperties().dnsType() == null ?
-										DnsType.DEFAULT_DOMAIN_REGISTRAR_DNS : domain.getProperties().dnsType())
-								.withAuthCode(domain.getProperties().authCode())
-								.withDnsZoneId(domain.getProperties().dnsZoneId())
-								.withKind(domain.getKind()),
+								.withConsent(domain.getProperties().consent()),
 						Context.NONE);
 	}
 }
